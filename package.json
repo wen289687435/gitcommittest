@@ -1,13 +1,13 @@
 {
   "name": "gitcommit",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "standard-version",
     "a": "conventional-changelog -p angular -i CHANGELOG.md -w -r 0",
-    "aa":"standard-version --help"
+    "aa": "standard-version --help"
   },
   "repository": {
     "type": "git",
@@ -34,22 +34,44 @@
     }
   },
   "standard-version": {
-    "skip": {
-      "tag": true,
-      "commit": true,
-      "bump": true
-    },
     "types": [
-        {"type":"feat","section":"Features"},
-        {"type":"fix","section":"Bug Fixes"},
-        {"type":"chore","hidden":true},
-        {"type":"docs","hidden":true},
-        {"type":"style","hidden":true},
-        {"type":"refactor","section":"Refactor"},
-        {"type":"perf","section":"Perf"},
-        {"type":"test","hidden":true},
-        {"type":"revert","section":"Revert"}
-      ]
+      {
+        "type": "feat",
+        "section": "Features"
+      },
+      {
+        "type": "fix",
+        "section": "Bug Fixes"
+      },
+      {
+        "type": "chore",
+        "hidden": true
+      },
+      {
+        "type": "docs",
+        "hidden": true
+      },
+      {
+        "type": "style",
+        "hidden": true
+      },
+      {
+        "type": "refactor",
+        "section": "Refactor"
+      },
+      {
+        "type": "perf",
+        "section": "Perf"
+      },
+      {
+        "type": "test",
+        "hidden": true
+      },
+      {
+        "type": "revert",
+        "section": "Revert"
+      }
+    ]
   },
   "husky": {
     "hooks": {
